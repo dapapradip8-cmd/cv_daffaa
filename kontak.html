@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">Daffa.CV</a>
+    <nav>
+      <ul>
+        <li><a href="beranda.html">Beranda</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="pengalaman.html">Pengalaman</a></li>
+        <li><a href="keahlian.html">Keahlian</a></li>
+        <li><a href="kontak.html" class="active">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="card">
+      <h1>Hubungi Saya</h1>
+      <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Mari terhubung jika anda memiliki minat untuk bekerja sama.</p>
+      <hr style="border: 0; border-top: 1px solid var(--border-color); margin-bottom: 1.5rem;">
+
+      <div style="margin-bottom: 2rem;">
+        <h3 style="color: var(--accent);">Informasi Kontak</h3>
+        <p style="margin-top: 0.5rem; line-height: 1.8;">
+          <strong>Email:</strong> tuankrebsukauang@email.com<br>
+          <strong>Telepon:</strong> +62 882-1234-9999<br>
+          <strong>Lokasi:</strong> Bandung, Indonesia
+        </p>
+      </div>
+
+      <div>
+        <h3 style="color: var(--accent);">Kirim Pesan</h3>
+        <form style="margin-top: 1rem; display: flex; flex-direction: column; gap: 1rem;">
+          <div>
+            <label style="display: block; margin-bottom: 0.5rem; color: var(--text-muted); font-size: 0.9rem;">Nama Lengkap</label>
+            <input type="text" placeholder="Masukkan nama anda" style="width: 100%; padding: 0.75rem; background-color: var(--bg-primary); border: 1px solid var(--border-color); border-radius: 4px; color: var(--text-main);">
+          </div>
+          <div>
+            <label style="display: block; margin-bottom: 0.5rem; color: var(--text-muted); font-size: 0.9rem;">Alamat Email</label>
+            <input type="email" placeholder="Masukkan email anda" style="width: 100%; padding: 0.75rem; background-color: var(--bg-primary); border: 1px solid var(--border-color); border-radius: 4px; color: var(--text-main);">
+          </div>
+          <div>
+            <label style="display: block; margin-bottom: 0.5rem; color: var(--text-muted); font-size: 0.9rem;">Pesan</label>
+            <textarea rows="4" placeholder="Tuliskan pesan anda..." style="width: 100%; padding: 0.75rem; background-color: var(--bg-primary); border: 1px solid var(--border-color); border-radius: 4px; color: var(--text-main); font-family: inherit;"></textarea>
+          </div>
+          <button type="submit" style="background-color: var(--accent); color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 4px; font-weight: bold; cursor: pointer; transition: opacity 0.3s;">Kirim Pesan</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Daffa. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

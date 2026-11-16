@@ -1,0 +1,298 @@
+:root {
+  --bg-primary: #121212;
+  --bg-card: #1e1e1e;
+  --text-main: #f5f5f5;
+  --text-muted: #a0a0a0;
+  --accent: #e50914; /* Aksen merah elegan */
+  --border-color: #2d2d2d;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+header {
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--text-main);
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+header .logo:hover {
+  transform: scale(1.05);
+  color: var(--accent);
+}
+
+
+main h1, main h3 {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+main h1:hover, main h3:hover {
+  transform: translateX(6px); 
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+  color: var(--accent);
+}
+
+nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  display: inline-block; 
+  transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+nav a:hover {
+  color: var(--accent);
+  transform: scale(1.1);
+}
+
+
+main {
+  flex: 1;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+  width: 100%;
+}
+
+.card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+  border-color: #444444; 
+}
+
+button[type="submit"] {
+  transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  transform: scale(1.02); 
+  opacity: 0.9;
+}
+
+h1, h2, h3 {
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--bg-card);
+  border-top: 1px solid var(--border-color);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+:root {
+  --bg-primary: #121212;
+  --bg-card: #1e1e1e;
+  --text-main: #f5f5f5;
+  --text-muted: #a0a0a0;
+  --accent: #e50914; /* Aksen merah elegan */
+  --border-color: #2d2d2d;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@keyframes fadeInSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Navigasi */
+header {
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--text-main);
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+header .logo:hover {
+  transform: scale(1.05);
+  color: var(--accent);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  display: inline-block;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--accent);
+  transform: scale(1.1); 
+}
+
+nav a.active {
+  color: var(--accent);
+}
+
+
+main {
+  flex: 1;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+  width: 100%;
+}
+
+.card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+  border-radius: 8px;
+  
+ 
+  animation: fadeInSlideUp 0.6s ease-out forwards;
+  transition: border-color 0.3s ease;
+}
+
+.card:hover {
+  border-color: #444444;
+}
+
+h1, h2, h3 {
+  margin-bottom: 1rem;
+}
+
+main h1, main h3 {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+main h1:hover, main h3:hover {
+  transform: translateX(6px); 
+}
+
+button[type="submit"] {
+  transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--bg-card);
+  border-top: 1px solid var(--border-color);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* Tombol Lanjut di Halaman Beranda */
+.btn-lanjut {
+  display: inline-block;
+  background-color: var(--accent);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.75rem 2rem;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.btn-lanjut:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
